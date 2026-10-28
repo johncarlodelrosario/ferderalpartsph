@@ -93,35 +93,6 @@ export default function RidersPage() {
             Back
           </Link>
         </div>
-
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 bg-red-600 text-white text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-4"
-          >
-            <Trophy className="w-4 h-4" />
-            Federal Parts Racing Team
-          </motion.span>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            className="text-white text-3xl md:text-5xl font-bold drop-shadow-lg"
-          >
-            Proven Under Pressure
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-gray-300 mt-2 text-base md:text-lg max-w-2xl"
-          >
-            Meet the riders who represent Federal Parts Philippines on every
-            road, every race, and every challenge.
-          </motion.p>
-        </div>
       </motion.div>
 
       {/* ── Riders Grid ── */}
