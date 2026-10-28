@@ -81,28 +81,6 @@ export default function HeroSection() {
             manufacturing expertise, and made accessible to everyday Filipino
             riders.
           </p>
-
-          {/* Read More & Browse Products Buttons - OVAL DESIGN */}
-          <div className="flex flex-wrap items-center gap-6 sm:gap-8 mt-4">
-            {/* Read More Button */}
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center bg-gradient-to-b from-[#cc0000] to-[#990000] hover:from-[#b30000] hover:to-[#800000] text-white font-bold py-5 px-16 sm:py-6 sm:px-24 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base sm:text-lg md:text-xl tracking-wide"
-              style={{ borderRadius: "9999px" }}
-            >
-              Read More
-            </Link>
-
-            {/* Browse Products Button */}
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center bg-transparent border-[3px] border-[#cc0000] text-[#cc0000] hover:bg-[#cc0000] hover:text-white font-bold py-5 px-16 sm:py-6 sm:px-24 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base sm:text-lg md:text-xl tracking-wide"
-              style={{ borderRadius: "9999px" }}
-            >
-              Browse Products
-              <ArrowRight className="ml-3 w-5 h-5 sm:w-6 sm:h-6" />
-            </Link>
-          </div>
         </motion.div>
       </div>
     </section>
