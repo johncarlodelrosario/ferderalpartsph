@@ -9,6 +9,11 @@ export default function HeroSection() {
     textShadow: "0 0 6px rgba(255,255,255,0.7)",
   };
 
+  const mildOutline = {
+    WebkitTextStroke: "0.7px black",
+    paintOrder: "stroke fill",
+  };
+
   return (
     <section className="relative w-full min-h-screen overflow-hidden bg-white">
       {/* Video Background - Full Screen */}
@@ -45,26 +50,38 @@ export default function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[0.95] tracking-tight mb-6 sm:mb-8"
             style={{ fontWeight: 900 }}
           >
-            <span className="block text-black" style={glowStyle}>
+            <span
+              className="block text-white"
+              style={{ ...glowStyle, ...mildOutline }}
+            >
               QUALITY YOU
             </span>
-            <span className="block text-black" style={glowStyle}>
+            <span
+              className="block text-white"
+              style={{ ...glowStyle, ...mildOutline }}
+            >
               CAN{" "}
               <span
                 className="text-[#cc0000] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
-                style={glowStyle}
+                style={{ ...glowStyle, ...mildOutline }}
               >
                 TRUST.
               </span>
             </span>
-            <span className="block text-black" style={glowStyle}>
+            <span
+              className="block text-white"
+              style={{ ...glowStyle, ...mildOutline }}
+            >
               PRICES YOU
             </span>
-            <span className="block text-black" style={glowStyle}>
+            <span
+              className="block text-white"
+              style={{ ...glowStyle, ...mildOutline }}
+            >
               CAN{" "}
               <span
                 className="text-[#cc0000] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
-                style={glowStyle}
+                style={{ ...glowStyle, ...mildOutline }}
               >
                 AFFORD.
               </span>
@@ -74,7 +91,7 @@ export default function HeroSection() {
           {/* Subtext */}
           <p
             className="text-sm sm:text-base md:text-lg lg:text-xl text-black-800 mb-6 sm:mb-8 max-w-2xl leading-relaxed"
-            style={glowStyle}
+            style={{ ...glowStyle, ...mildOutline }}
           >
             Federal provides OEM-grade motorcycle replacement parts engineered
             with Japanese-level precision, backed by Indonesia's proven
