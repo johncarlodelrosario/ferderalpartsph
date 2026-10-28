@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-red: #c41e24;
+    --primary-dark: #8b0000;
+    --secondary-gold: #ffd700;
+  }
+
+  /* Pinalitan natin ito para maging dark ang buong app by default */
+  body {
+    @apply bg-[#0a0a0a] text-gray-100;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300;
+  }
+
+  /* Ginawa nating gray-100 (puti) at gray-400 (light gray) ang mga text para lumitaw sa dark background */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-100 mb-8 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto;
+  }
+}
